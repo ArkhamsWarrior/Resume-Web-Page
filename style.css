@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Titillium Web', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+      -ms-flex-direction: inherit;
+          flex-direction: inherit;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+nav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 13%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(150deg, black 0%, #2b275d 25%, #3977c7 54%, #5c75ff 69%, #24aec4 100%);
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav ul li, nav ul h1 {
+  color: white;
+  margin: 20px;
+}
+
+nav ul li {
+  margin: 25px;
+  font-size: 20px;
+}
+
+.container ul {
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
+}
+
+.container ul li {
+  letter-spacing: 3px;
+  list-style: none;
+  font-size: 28px;
+  font-weight: 600;
+  width: 100%;
+  height: 50%;
+  padding-top: 0vh;
+  margin: 150px;
+  border: solid #c4c4c4 2px;
+  text-align: center;
+  -webkit-box-shadow: 2px 0px 15px 8px #c9cdff;
+  box-shadow: 2px 0px 15px 8px #c9cdff;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.container ul li span {
+  float: right;
+  text-align: center;
+  padding-right: 1vw;
+  padding-left: 5%;
+  padding-right: 2%;
+  -webkit-transition: -webkit-filter 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: -webkit-filter 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: filter 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: filter 0.6s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-filter 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.container ul li span:hover {
+  -webkit-box-shadow: inset 0px 2px 4px 3px black;
+          box-shadow: inset 0px 2px 4px 3px black;
+}
+
+.container ul li:hover span {
+  display: inline;
+  opacity: 1;
+  -webkit-transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+/*# sourceMappingURL=style.css.map */
