@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif; 
+    position: relative;
+   
+    flex-direction: inherit;
+    min-height: 500vh;
+
+}
+.content{
+    position: fixed;
+    top: 20%;
+    left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+}
+.circles {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 20px;
+    max-height: 100%;
+    height: 60vh;
+}
+.circles::before{
+    content:'';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 10px;
+    transform: translateX(-50%);
+    // border: black 1px solid;
+    height: 100%;
+    background-color: rgb(207, 207, 207);
+    z-index: -1;
+    
+}
+// .progress:before{
+//     content: '';
+//     position: absolute;
+//     left: 50%;
+//     top: 0;
+//     width: 10px;
+//     transform: translateX(-50%);
+//     // border: black 1px solid;
+//     height: 0%;
+//     background-color: rgb(207, 207, 207);
+
+// }
+.progress{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 10px;
+    transform: translateX(-50%);
+    // border: black 1px solid;
+    height: 00%;
+    background-color: rgb(83, 189, 255);
+    z-index: -1;
+
+}
+.circ{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    height: 50px;
+    width: 50px; 
+    border: 3px solid white;
+    background-color: rgb(207, 207, 207);
+    transform: rotate(45deg);
+    transition: background-color .5s linear;
+     border-radius: 15%;
+
+}
+.circ.active{
+    background-color:rgb(83, 189, 255);
+}
+.active{
+    
+    background-color: rgb(83, 189, 255);
+}
+.mini{
+position: relative;
+// left: 30%;
+// top:28%;
+height: 30px;
+width: 30px; 
+border: 2px solid white;
+transform: rotate(90deg);
+
+    border-radius: 15%;
+background:white;
+
+}
+ul{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    justify-content: space-between;
+    li{
+        list-style-type: none;
+        transition-property: font-size, color, font-weight;
+        transition-duration: .4s;
+        transition-timing-function:cubic-bezier(0.39, 0.575, 0.565, 1);
+
+        //font-size, font-weight, color
+        &.bold{
+             font-size: 120%; 
+             font-weight: 900;
+             color: blue;
+        }
+    }
+}
+
+section> div {
+    border: 1px solid black;
+    background: magenta;
+    width: 100%;
+    height: 100vh;
+}
