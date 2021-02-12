@@ -15,6 +15,7 @@ React, Angular, Node.JS, MongoDB, etc.
 
 Some ideas that've come to mind when brainstorming for this page:
 1. Hover and reveal information (Such as personal information that are made into bullets)
+
 ~~2. Progress Bar with the sections of the resume instead of a nav bar (Progress bar would be a fixed element on the left. Will this obstruct the layout of the page though?)~~ **Completed**
 3. Flash effects when hovering over bullets in the "Technologies" section, along with lightning bolts being the list-style-image for the bullets
 4. PHP that asks if my qualifications met the employer's satisfaction. (Just a first idea. I would like to maybe establish a domain for my site and an email that will retrieve
