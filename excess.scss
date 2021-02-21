@@ -1,0 +1,79 @@
+@mixin list() {
+    &:nth-child(1){
+        background:url("./mail.svg") no-repeat left -1px;
+        padding-left: 30px;
+
+
+    }
+    &:nth-child(2){
+        background:url("./smartphone.svg") no-repeat left -1px;
+        padding-left: 30px;
+
+    }
+    &:nth-child(3){
+        background: url("./home.svg") no-repeat left -1px;
+        padding-left: 30px;
+    }
+    &:nth-child(4){
+        background:url("./github-alt-brands.svg") no-repeat left -1px;
+        padding-left: 30px;
+    }
+}
+
+@mixin border(){
+    .top-l{
+        position: absolute;
+        top: 10%;
+        left: 0;
+        height: 10px;
+        width: 25%;
+        background:var(--border-color);
+    }
+    .top-r{
+        position: absolute;
+        top: 10%;
+        right:0;
+        height: 10px;
+        width: 25%;
+        background:var(--border-color);
+    }
+    .bottom-l{
+
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        height: 10px;
+        width: 25%;
+        background:var(--border-color);
+        
+
+    }
+    .bottom-r{
+        position: absolute;
+        bottom: 10%;
+        right: 0;
+        height: 10px;
+        width: 25%;
+        background:var(--border-color);
+        
+
+
+    }
+    .right{
+        position: absolute;
+        height:80%;
+        top:10%;
+        right:0;
+        width: 10px;
+        background:var(--border-color);
+
+    }
+    .left{
+        position: absolute;
+        height:80%;
+        top:10%;
+        left:0;
+        width: 10px;
+        background:var(--border-color);
+    }
+}
