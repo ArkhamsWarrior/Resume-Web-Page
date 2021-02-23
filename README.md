@@ -14,15 +14,17 @@ I would like for this page to be the forefront of what I can do with the web tec
 React, Angular, Node.JS, MongoDB, etc. 
 
 Some ideas that've come to mind when brainstorming for this page:
-1. Hover and reveal information (Such as personal information that are made into bullets)
+~~1. Hover and reveal information (Such as personal information that are made into bullets)~~ 
 2. ~~Progress Bar with the sections of the resume instead of a nav bar (Progress bar would be a fixed element on the left. Will this obstruct the layout of the page though?)~~ **!!Completed!!**
 
-3. Flash effects when hovering over bullets in the "Technologies" section, along with lightning bolts being the list-style-image for the bullets
-4. PHP that asks if my qualifications met the employer's satisfaction. (Just a first idea. I would like to maybe establish a domain for my site and an email that will retrieve
-the responses, or atleast send me an email that someone has submitted a response).
-5. Have the different sections of the page fade in and transition upward as you progress, and fade out and transition up as you scroll away from them. (I enjoy
-having that smooth aesthetic in a page)
-6. Attach a download to my .docx resume on the webpage.
+~~3. Flash effects when hovering over bullets in the "Technologies" section, along with lightning bolts being the list-style-image for the bullets~~ **!!Not Doing!!**
+3. Designed my programming languages into cards and made a card swapping effect for each card. Very satisfied with end result.
+~~4. PHP that asks if my qualifications met the employer's satisfaction. (Just a first idea. I would like to maybe establish a domain for my site and an email that will retrieve
+the responses, or atleast send me an email that someone has submitted a response).~~ **!!Not Doing!!**
+4. I want to have my Skills & Technologies section consist of 3 cards (1 in front, 2 behind) that allow you to swap between them as you click each card. 
+~~5. Have the different sections of the page fade in and transition upward as you progress, and fade out and transition up as you scroll away from them. (I enjoy
+having that smooth aesthetic in a page)~~ **!!Achieved and Completed!!**
+6. Attach a download to my .docx resume and unofficial transcript on the webpage.
 
 
 **Frequently Updated.**
