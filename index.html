@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="body-style.css">
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/body-style.css">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 
@@ -26,17 +26,17 @@
 <body>
     <div class="content">
     <div class="circles">
-        <div class="progress"></div>
-        <div class = "circ "><div class="mini"></div></div>
+        <class class="progress"></class>
+        <div class = "circ active"><div class="mini"></div></div>
         <div class = "circ"><div class="mini"></div></div>
         <div class = "circ"><div class="mini"></div></div>
         <div class = "circ"><div class="mini"></div></div>
         <div class = "circ"><div class="mini"></div></div>
     </div>
     <ul>
-        <li>About</li>
+        <li class = "bold">About</li>
         <li>Education</li>
-        <li>Technologies</li>
+        <li>Code</li>
         <li>Skills</li>
         <li>Projects</li>
     </ul>
@@ -50,7 +50,7 @@
         <h2>Jadyn Fletcher</h2>
         <h3>Aspiring Full Stack Developer</h3> -->
         <div class="intro">
-        <h1>Hello, I'm <span><br>Jadyn Fletcher</span></h1>
+        <h1>Hello, I'm <span><br/>Jadyn Fletcher</span></h1>
         <h3>An Aspiring Full Stack Developer<hr/></h3>
         
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur ab delectus deleniti libero velit alias dicta dolores aliquid corrupti eaque eveniet nostrum molestiae ipsum excepturi exercitationem, repudiandae dolorum recusandae quae!
@@ -60,10 +60,10 @@
         <div class="grid">
             <h1>Contacts</h1>
         <ul>
-            <li><a href="mailto: Jadynfletch@gmail.com">Jadynfletch@gmail.com</a></li>
-            <li><span>301-526-2122</span></li>
-            <li><span></span>White Plains, Maryland</span></li>
-            <li><a href="https://github.com/ArkhamsWarrior"><span>Github Link</a></span></li>
+            <li><a href="mailto: Jadynfletch@gmail.com">Jadynfletch@gmail.com<div></div></a></li>
+            <li>301-526-2122</li>
+            <li>White Plains, Maryland</li>
+            <li><a href="https://github.com/ArkhamsWarrior">Github Link<div></div></a></li>
         </ul>
     </div>
        <div class="grid">
@@ -75,26 +75,8 @@
             <li>Team Player</li>
         </ul>
     </div>
-       <!-- <div class="grid">
-        <ul>
-            <li><a href="mailto: Jadynfletch@gmail.com">Jadynfletch@gmail.com</a></li>
-            <li><span>301-526-2122</span></li>
-            <li><span></span>White Plains, Maryland</span></li>
-            <li><a href="https://github.com/ArkhamsWarrior"><span>https://github.com/ArkhamsWarrior</a></span></li>
-        </ul>
-    </div> -->
 </div>
 
-
-    
-    <!-- </div> -->
-    <!-- <div class = "PI-right">
-        <h2>Education</h2>
-
-        <h2>Work Experience</h2>
-
-        <h2>Mini-Bio</h2>
-    </div> -->
 </section>
 <section class = "ED">
     <div class="border">
@@ -109,6 +91,52 @@
         <h1>I Currently Attend <br>Campbell University</h1>
     </div>
     </div>
+    <div class = "content-education">
+
+        <div class="Info"><div class = "title">
+            <h2>Major & Achievements</h2>
+        </div>  
+            <hr/>
+            <div class = "info-content">
+
+                <h4>Major in Information Technology & Security</h4>
+                <h4>GPA: 3.6</h4>
+                <h4>Recipient of Presidential Scholarship since 2018</h4>
+                <h4>Dean's List Since 2018</h4>
+            </div>
+            
+        </div>
+        <div class="Info">
+            <div class = "title">
+                <h2>Expected Graduation</h2>
+            </div>
+            <div class = "info-content">
+                
+                <h3>December 2021</h3>
+                <h3>Countdown</h3>
+                <h2 class = "countdown"></h2>
+            </div>
+            <hr/>
+
+        </div>
+        <div class="Info">
+                <div class = "title">
+                    <h2>Relevant Coursework</h2>
+                </div>
+                <div class = "info-content">
+            <ul class = "courses">
+                <li>Database Administration</li>
+                <li>Internet Applications</li>
+                <li>System Development & Management</li>
+                <li>Java Programming</li>
+            </ul>
+        </div>
+        </div>
+        
+
+
+
+    </div>
 </section>
 
 
@@ -117,55 +145,71 @@
         <h1>Programming Languages</h1>
     </div>
     <div class="langs">
-        <div class="lang-card">
+        <div class="contain">
+        <div class="lang-card passive">
+            <h3>Java</h3>
+        </div>
             <div class="cont-card passive">
                 <ul>
                     <li>Practiced for 3 years</li>
                     <li>Cemented my foundation of Data Structures and OOP</li>
                     <li>Completed multiple group projects </li>
                 </ul>
-            </div>
-            <h3>Java</h3>
+
         </div>
-        <div class="lang-card">
+    </div>
+    <div class="contain">
+        <div class="lang-card passive">
+        <h3>Python</h3>
+    </div>
             <div class="cont-card passive">
                 <ul>
                         <li>Practiced for 2 years</li>
                         <li>Practiced with libraries such as Pandas, NumPy, and SciKit-Learn</li>
                         <li>Used to learn Machine Learning and Data Science</li>
                 </ul>
-            </div>
-            <h3>Python</h3>
+
         </div>
-        <div class="lang-card">
-            <div class="cont-card ">
+    </div>
+    <div class="contain ">
+        <div class="lang-card passive">
+        <h3>Javascript</h3>
+    </div>
+            <div class="cont-card">
                 <ul>
                     <li>Practiced for 4 months</li>
                     <li>Picked up fairly quick due to similar syntax and semantics w/ Java</li>
                     <li>Greatly enjoy creating JS projects (Especially utilizing DOM)</li>
                     <li>Currently learning frameworks/libraries such as jQuery and React</li>
                 </ul>
-            </div>
-            <h3>Javascript</h3>
+
         </div>
-        <div class="lang-card">
-            <div class="cont-card ">
+    </div>
+    <div class="contain">
+        <div class="lang-card passive">
+        <h3>SQL</h3>
+        </div>
+            <div class="cont-card passive">
                 <ul>
                     <li>Practiced for 5 months</li>
                     <li>Utilized in Database Administration course</li>
                     <li>Learning to use in junction with PHP</li>
                 </ul>
-            </div>
-            <h3>SQL</h3>
+            
         </div>
-        <div class="lang-card">
-            <div class="cont-card ">
+    </div>
+    <div class="contain">
+        <div class="lang-card passive">
+            <h3>PHP</h3>
+        </div>
+            <div class="cont-card passive">
                 <ul>
                     <li>Practiced for 1 month</li>
                     <li>Basic knowledge and implementation with HTML </li>
                 </ul>
-            </div>
-            <h3>PHP</h3>
+            
+           
+        </div>
         </div>
     </div>
 </section>
@@ -173,41 +217,16 @@
 
 <section class = "SK">
     <div class = "intro">
-
+        <h1>Skills & Technologies</h1>
     </div>
+
 </section>
-<section>
-    <div></div>
+<section class= "PR">
+    <div class = "intro"></div>
 </section>
 </div>
 <script src = "script.js"></script>
-<script>
-// const squares = document.querySelectorAll('section');
-// const grid = document.querySelectorAll('.grids .grid');
-// console.log(grid)
-// console.log(squares);
-// let sayHello = () => {
-//     console.log('hello');
 
-// }
 
-// grid.forEach(box => {
-//     box.addEventListener('click', () => {
-//         console.log(box)
-//     })
-// })
-
-// squares.forEach(box => {
-//     console.log(box)
-//     box.addEventListener('click', () => {
-//         console.log(box)
-//     })
-// })
-// squares.addEventListener('mouseenter', () => {
-//     console.log('hello')
-// })
-// squares.forEach(square => square.addEventListener('mouseover', sayHello))
-
-</script>
 </body>
 </html>

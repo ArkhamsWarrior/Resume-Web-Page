@@ -1,0 +1,677 @@
+// @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
+:root{
+    --border-color:rgb(66, 164, 209);
+}
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600&family=Lato:ital,wght@0,300;1,300&display=swap');
+
+
+@mixin list() {
+    &:nth-child(1){
+        background:url("../assets/mail.svg") no-repeat left -1px;
+        padding-left: 30px;
+
+
+    }
+    &:nth-child(2){
+        background:url("../assets/smartphone.svg") no-repeat left -1px;
+        padding-left: 30px;
+
+    }
+    &:nth-child(3){
+        background: url("../assets/home.svg") no-repeat left -1px;
+        padding-left: 30px;
+    }
+    &:nth-child(4){
+        background:url("../assets/github-alt-brands.svg") no-repeat left -1px;
+        padding-left: 30px;
+        div{
+            left:55%;
+            width: 17.3%;
+        }
+        &:hover{
+             div{
+                
+
+        }
+    }
+}
+}
+@mixin border(){
+    .top-l{
+        position: absolute;
+        top: 10%;
+        left: 0;
+        height: 10px;
+        width: 25%;
+        background:var(--border-color);
+    }
+    .top-r{
+        position: absolute;
+        top: 10%;
+        right:0;
+        height: 10px;
+        width: 25%;
+        background:var(--border-color);
+    }
+    .bottom-l{
+
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        height: 10px;
+        width: 25%;
+        background:var(--border-color);
+        
+
+    }
+    .bottom-r{
+        position: absolute;
+        bottom: 10%;
+        right: 0;
+        height: 10px;
+        width: 25%;
+        background:var(--border-color);
+        
+
+
+    }
+    .right{
+        position: absolute;
+        height:80%;
+        top:10%;
+        right:0;
+        width: 10px;
+        background:var(--border-color);
+
+    }
+    .left{
+        position: absolute;
+        height:80%;
+        top:10%;
+        left:0;
+        width: 10px;
+        background:var(--border-color);
+    }
+}
+
+
+
+body{
+    background-image: linear-gradient(
+        (to top right, 
+        #fff1eb 0%, 
+        #ace0f9 80%, 
+        #4facfe 100%));
+}
+
+
+
+
+
+.body{
+    position: relative;
+    top: 6vh;
+    font-family: 'Assistant', sans-serif;
+    width: 85%;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+
+section{
+    margin: 20px 0 20px 0;
+    height: 100vh;
+    z-index: 1;
+    transition: all 2s ; 
+    opacity: 0;
+    // transition: scale 1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transform: scale(.5);
+    transform: translateY(30px);
+    border-radius: 4%;
+
+    &.PI{
+    background: linear-gradient((
+        to right bottom,
+     rgba(255,255,255, 0.7),
+      rgba(255,255,255,0.3)));
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+&.active-fade{
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transform: scale(1);
+    transform: translateY(0px);
+
+    opacity: 1;
+}
+    
+}
+
+
+// =================
+//   INTRODUCTION
+// =================
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    flex:5;
+    h1{
+        font-size: 48px;
+        font-weight: 700px;
+        color: rgba(52, 128, 190, 0.7);
+        margin-top: 5%;
+        span{
+            width:100%;
+            color:rgb(39, 98, 146);
+            font-size:72px;
+
+        }
+    }
+    h3{
+       font-size: 24px;
+       font-weight: 500;
+    }
+    h6, p{
+        font-weight: 300;
+        font-size: 20px;
+    }
+    hr{
+        width:50%;
+        height: 5px;
+        background: rgba(70, 187, 241, 0.5);
+        border: none;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+.grids{
+    display: flex;
+    flex:3;
+    width: 90%;
+    margin: auto;
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    width: 25%;
+    margin: auto auto 50px auto;
+     border-radius: 5%;
+    // z-index:-2; Add this when we add a scroll event. As they scroll down, the z-index transitions to
+    h1{
+        color: white;
+        margin: 10% 0 2% 0;
+    }
+    ul{
+        font-family: 'Assistant', sans-serif;
+
+        // display: flex;
+        // padding-left:0;
+        height: 10vh;
+        width: 80%;
+        // margin-bottom: 30px;
+        // border-radius: 50%;
+        //align-items:flex-start;
+        font-size: 15px;
+        li{
+            position: relative;
+            margin: 10px 0 10px 0;
+            // padding-bottom: 3px;
+            // margin-bottom: 3px;
+            color:black;
+            a{
+
+                width: 100%;
+                text-decoration: none;
+                transition: all .7s linear;
+
+                color:rgba(15, 43, 168, 0.74);
+                div{
+                    transition: transform .25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                    position: absolute;
+                    visibility: hidden;
+                    transform: scaleX(1);
+                    left: 49%;
+                    width: 20%;
+                    height: 2px;
+                    background-color: white;
+                }
+                &:visited{
+
+                }
+                &:hover{
+                    > div{
+                        visibility: visible;
+                        transform: scaleX(4.2);
+                    }
+                    color: #0048CA;
+
+                }
+            }
+        }
+    }
+}
+.grid:nth-of-type(1){
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+        border: rgba(255, 255, 255, 0.233) solid 2px;
+    ul{
+        display: flex;
+        padding-left:0;
+        height: 10vh;
+        width: 80%;
+        margin-bottom: 30px;
+        align-items:flex-start;
+        li{
+            @include list();
+        }
+    }
+}
+.grid:nth-of-type(2){
+    background-image:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+        ul{
+        
+            li{
+                list-style-type: disc;
+            }
+    }
+}
+.grid:nth-of-type(3)
+{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+}
+
+// ======================
+//      EDUCATION
+// ======================
+
+
+
+section.ED{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    .intro{
+        width: 50%;
+        flex:4;
+        background: linear-gradient((
+            to right bottom,
+         rgba(255,255,255, 0.7),
+          rgba(255,255,255,0.3)));
+          border-radius: 3%;
+        height: 25%;
+        padding:0;
+        h1{
+             text-align: center;
+        }
+    }
+    .border{
+        position: absolute;
+        width: 100%;
+        height:100%;
+        
+        @include border();
+    }
+
+    .content-education{
+        position: relative;
+        height:90%;
+        width: 96%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;        
+        div{
+            position:relative;
+            width: 50%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+             justify-content: space-around;
+            .title{
+                border: 2px solid black;
+                height: 30%;
+                width: 100%;
+                text-align: center;
+            }
+            .info-content{
+                align-items: center;
+                width: 100%;
+            }
+        h2{
+            justify-self:flex-end;
+        }
+            & > h4, h3, h2.countdown, ul.courses li{
+               
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+                margin: 3px;
+                font-family: 'Roboto', sans-serif;
+                
+            }
+
+            h2{
+                
+                font-size: 30px;  
+                color:royalblue;
+                text-align: center;
+                justify-self: flex-start;
+
+            }
+            ul{
+                height: 100%;
+                text-align: center;
+                
+            }
+        }
+
+        hr{
+
+            position: absolute;
+            top: 50%;
+            right:-28.5%;
+            height:3px;
+            width: 60%;
+            transform: rotate(90deg);
+            border: none;
+            color: white;
+            background-color:white;
+            box-shadow: none;
+        }
+        
+
+    }
+}
+
+// ======================
+// PROGRAMMING LANGUAGES
+// ======================
+
+
+section.PL{
+    display: flex;
+    z-index: 3;
+    flex-direction: column;
+    background: linear-gradient((
+        to right bottom,
+     rgba(255,255,255, 0.7),
+      rgba(255,255,255,0.3)));
+
+
+      .intro{
+        width: 80%;
+        margin: auto;
+        flex:2;
+        align-items: center;
+      }
+      .langs{
+        display: flex; 
+        position: relative;
+        flex: 8;
+        margin: 30px auto auto auto;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap:wrap;
+        .contain{
+            position: relative;
+            height:35%;
+            width:25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        
+          .lang-card{
+              position:absolute;
+              top:0;
+              right:0;
+              display: flex;
+              height: 100%;
+              width: 100%;
+              background: linear-gradient((
+                to right bottom,
+             rgba(255,255,255, .8),
+              rgba(255,255,255, .9)));
+              align-items: center;
+              justify-content: center;
+              h3{
+                  cursor: pointer;
+                  user-select: none;
+                  font-size: 34px;
+                  color:rgb(39, 98, 146);     
+              }
+              &.passive{
+                transition: top .2s linear;
+                transition: left .2s linear;
+                top: 0;
+                left: 0;
+                z-index:1;
+                h3{
+                    transition: opacity .5s linear;
+                    opacity: 1;
+                }
+            }
+            &.hover{
+                transition: transform 1s ease;
+                transition-delay:.1s;
+
+        
+                transform: translateY(-5px);
+            }
+            
+        
+            &.anime{
+
+                animation: cardSwitch1 1s linear;
+            }
+            &.new-pos{
+                position: absolute;
+                top: -10px;
+                left: 10px;
+                z-index:-3;
+                
+                
+                
+            }
+            // &.new-pos h3{
+            //     transition: opacity .5s linear;
+            //     opacity: .05;
+            // }
+            &.anime h3{
+                transition: opacity .5s linear;
+                opacity: .01;
+            }
+        }   
+              
+          }
+          .cont-card{
+            position:absolute;
+          //   display: none;
+            top: -15px;
+            left: 15px;
+            z-index: -5;
+            height: 100%;
+            width: 100%;
+            user-select: none;
+            background-color: rgba(15, 43, 168, 0.2);
+            &.passive{
+
+                z-index: -5;
+                top: -10px;
+                left: 10px;
+                
+            }
+            &.new-pos{
+                
+                transition: top .2s linear;
+                transition: left .2s linear;
+                top: 0px;
+                left: 0px;
+                z-index: 1;
+                
+            }
+            &.anime{
+                
+                animation: cardSwitch2 1s linear;
+
+                ul{
+                    opacity:.05;
+                    transition: opacity .5s linear;
+                }
+        
+            }
+            &.hover{
+                transition: transform 1s ease;
+                transition-delay:.1s;
+            
+                transform: translateY(-5px);
+            }
+        
+        }
+            ul{
+                //!!Comment to reveal cards
+                 opacity: 0.05;
+                border: 1px solid rgba(15, 43, 168, 0.521);
+                height: 100%;
+                padding-left: 20px;
+                display: flex;
+                justify-content: space-around;
+
+                li{
+                 
+                  list-style-image: url("../assets/lightning.svg") ;
+
+                }
+
+            }
+            .new-pos ul{
+                transition: opacity .5s linear;
+                opacity: 1;
+
+            }
+        }
+
+
+          
+          
+}
+
+.cont-card .anime ~ .lang-card h3{
+    transition: opacity .5s linear;
+    opacity: 1;
+}
+
+section.SK{
+    background: linear-gradient((
+        to right bottom,
+     rgba(255,255,255, 0.7),
+      rgba(255,255,255,0.3)));
+}
+
+// ==================
+//      Projects
+// ==================
+
+section.PR{
+    background: linear-gradient((
+        to right bottom,
+     rgba(255,255,255, 0.7),
+      rgba(255,255,255,0.3)));
+}
+
+@keyframes cardSwitch1{
+    0%{
+        
+    }
+    30%{
+        transform: translateY(-20px);
+
+    }
+    50%{
+        z-index:-5;
+    }
+    80%{
+
+        z-index:-5;
+        transform:translate(10px, -20px);
+        
+
+    }
+    90%{z-index:-5;
+    }
+    100%{z-index:-5;
+        transform: translate(10px,0px);
+    }
+}
+@keyframes cardSwitch2{
+    0%{
+        // transform: translate(0,0);
+    }
+    30%{
+        transform: translateY(-20px);
+    }
+    50%{
+        ul{
+            opacity: .05;
+        }
+        z-index:-5;
+
+    }
+    80%{
+        transform:translate(10px, -20px);
+        z-index:-5;
+    }
+    90%{
+        .lang-card .passive{
+            transition: visibility 10s linear;
+            visibility: visible;
+        }
+        z-index:-6;
+    }
+    100%{
+        transform: translate(10px,0px);
+        z-index: -5;
+    }
+}
+
+@keyframes newpos2{
+    0%{
+        transform: translate(0, 0);
+        z-index: 1;
+
+    }
+
+    100%{ 
+        transform: translate(-10px, 5px);
+    }
+}
+
+@keyframes newpos1{
+    0%{
+    }
+
+    100%{
+        z-index: 1;
+        transform: translate(0px, 5px);
+
+    }
+
+}
+
